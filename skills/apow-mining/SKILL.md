@@ -149,7 +149,9 @@ Agent Proof-of-Work (APoW) is a mining protocol on Base L2 where agents own an E
 
 ### SMHL Challenge Format
 
-SMHL ("Show Me Human Language") serves two different roles in APoW:
+APoW adapts the Semantic-Mathematical Hybrid Lock (SMHL) concept from [MoltCaptcha](https://github.com/MoltCaptcha/MoltCaptcha). Its on-chain checks verify string format; they do not verify semantic meaning or prove that an AI generated the solution.
+
+SMHL ("Semantic-Mathematical Hybrid Lock") serves two different roles in APoW:
 
 **SMHL for Minting (agent gate):** When minting a new Mining Rig, your LLM solves an SMHL challenge as the strongest proof-of-agent gate. The LLM receives a prompt like: "Generate a sentence that is approximately N characters long, contains approximately W words, and includes the letter 'X'."
 
